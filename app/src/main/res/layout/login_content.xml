@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.adefault.myapplication.Activity.LoginActivity"
+    tools:showIn="@layout/activity_login">
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter email address"
+                    android:inputType="textEmailAddress"
+                    android:drawableStart="@drawable/ic_email"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/ic_email" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                app:passwordToggleEnabled="true">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/prompt_password"
+                    android:inputType="textPassword"
+                    android:drawableStart="@drawable/ic_password"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textCursorDrawable="@null"
+                    app:backgroundTint="@android:color/white"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/ic_packages" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:padding="3dp"
+                android:id="@+id/email_sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_button2"
+                android:elevation="2dp"
+                android:text="SIGN IN"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="243dp"
+        android:layout_height="157dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/ic_app_testicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="71dp" />
+
+</android.support.constraint.ConstraintLayout>

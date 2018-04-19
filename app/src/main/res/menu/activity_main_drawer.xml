@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_packages"
+            android:title="All Package" />
+        <item
+            android:id="@+id/nav_receive"
+            android:icon="@drawable/ic_inbound"
+            android:title="Receive" />
+        <item
+            android:id="@+id/nav_sort"
+            android:icon="@drawable/ic_sort"
+            android:title="Sort" />
+        <item
+            android:id="@+id/nav_outbound"
+            android:icon="@drawable/ic_outbound"
+            android:title="Outbound" />
+        <item
+            android:id="@+id/nav_loading"
+            android:icon="@drawable/ic_loading"
+            android:title="Loading" />
+        <item
+            android:id="@+id/nav_loaded"
+            android:icon="@drawable/ic_loaded"
+            android:title="Loaded" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+
+
+
+
+
+</menu>
